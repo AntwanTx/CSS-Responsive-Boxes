@@ -1,3 +1,68 @@
 body {
   background: papayawhip;
 }
+
+.container{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  gap: 30px;
+}
+
+
+
+.a, .b, .c, .d, .e, .f{
+  background-color: #d8d8d8;
+  border: 1px solid #5e5d5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.a, .f{
+  flex: 1;
+}
+
+.second-container{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+
+}
+.b{
+  flex: 1;
+}
+ 
+ .third-container{
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  margin-top: 3%;
+ }
+
+ .c , .d, .e {
+  flex: 1;
+}
+
+@media (min-width: 990px) {
+  .container{
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .second-container{
+    flex-basis: 50%;
+
+  }
+
+  .a{
+    flex-basis: 100%;
+  }
+  .b{
+    flex-basis: 50%;
+  }
+
+}
